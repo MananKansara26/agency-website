@@ -2,10 +2,13 @@
   "name": "agency-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/MananKansara26/agency-website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "next lint"
   },
   "dependencies": {
@@ -19,5 +22,8 @@
     "react-scroll": "^1.8.9",
     "react-stickynode": "^4.1.0",
     "theme-ui": "^0.16.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
